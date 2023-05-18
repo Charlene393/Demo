@@ -1,9 +1,168 @@
-<mxfile host="app.diagrams.net" modified="2023-05-18T16:07:41.630Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.2.9" etag="Y0SvQMqVy_7lBIdC7v3W" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-18T16:52:49.244Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="adEAjp-q-UzEOFcJEHAB" version="21.2.9" type="github">
   <diagram name="Page-1" id="zvx2vZGk1r1jxa4pdklp">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="1568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-1" value="+SSN&lt;br&gt;+PName&lt;br&gt;+Age&lt;br&gt;+Address" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="210" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-3" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-1" target="CtRb_3HX5sHRKx_EAmUn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="120" as="sourcePoint" />
+            <mxPoint x="150" y="80" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-4" value="Patient" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-8" value="" style="endArrow=none;html=1;rounded=0;exitX=1.003;exitY=0.796;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="250" as="sourcePoint" />
+            <mxPoint x="40" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-9" value="Purchase Drugs()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-10" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-1" target="CtRb_3HX5sHRKx_EAmUn-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="430" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-11" value="+DSSN&lt;br&gt;+DName&lt;br&gt;+Speciality&lt;br&gt;+Year of Experience" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="60" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-13" value="" style="endArrow=none;html=1;rounded=0;entryX=1.018;entryY=0.222;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.014;exitY=0.222;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-11" target="CtRb_3HX5sHRKx_EAmUn-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="215" as="sourcePoint" />
+            <mxPoint x="510" y="165" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-14" value="Doctor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="70" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-18" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-11" target="CtRb_3HX5sHRKx_EAmUn-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="230" as="sourcePoint" />
+            <mxPoint x="440" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="260" />
+              <mxPoint x="580" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-19" value="Diagnose patient()&lt;br&gt;Prescribe patient()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-20" value="1...*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-21" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-22" value="+InsuranceNO&lt;br&gt;+Insurance company&lt;br&gt;+PName&lt;br&gt;#SSN&lt;br&gt;+Percentage Deductable&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="210" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-23" value="" style="endArrow=none;html=1;rounded=0;entryX=1.01;entryY=0.168;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.019;exitY=0.177;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-22" target="CtRb_3HX5sHRKx_EAmUn-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="575" as="sourcePoint" />
+            <mxPoint x="140" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-24" value="Insurance&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="460" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-25" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-22" target="CtRb_3HX5sHRKx_EAmUn-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="690" as="sourcePoint" />
+            <mxPoint x="110" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-26" value="Insure Patient()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="670" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0.467;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="CtRb_3HX5sHRKx_EAmUn-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="440" as="sourcePoint" />
+            <mxPoint x="180" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-28" value="1...1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-29" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-30" value="+PrescriptionID&lt;br&gt;#Prescription&lt;br&gt;+SSN&lt;br&gt;+DSSN&lt;br&gt;#Dosage&lt;br&gt;+PharmacyName&lt;br&gt;+PharmacyAddress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-250" width="210" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-32" value="" style="endArrow=none;html=1;rounded=0;entryX=1.003;entryY=0.199;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.016;exitY=0.193;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-30" target="CtRb_3HX5sHRKx_EAmUn-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="-200" as="sourcePoint" />
+            <mxPoint x="210" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-33" value="Prescription" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-34" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-30" target="CtRb_3HX5sHRKx_EAmUn-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" as="sourcePoint" />
+            <mxPoint x="150" y="-50" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-36" value="Store_prescription()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-37" value="" style="endArrow=none;html=1;rounded=0;entryX=0.438;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="CtRb_3HX5sHRKx_EAmUn-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="70" as="sourcePoint" />
+            <mxPoint x="170" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-38" value="1...*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-39" value="+PharmacyID&lt;br&gt;+PharmacyName&lt;br&gt;+City&lt;br&gt;+PharmacyPhoneNo&lt;br&gt;+PharmacyAddress" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="-230" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-40" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="CtRb_3HX5sHRKx_EAmUn-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="-180" as="sourcePoint" />
+            <mxPoint x="490" y="-230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-41" value="Pharmacy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-220" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-42" value="Offer Prescription()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-60" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-43" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="CtRb_3HX5sHRKx_EAmUn-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="-70" as="sourcePoint" />
+            <mxPoint x="490" y="-120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="-70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-44" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.99;exitY=0.468;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CtRb_3HX5sHRKx_EAmUn-30" target="CtRb_3HX5sHRKx_EAmUn-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="-120" as="sourcePoint" />
+            <mxPoint x="330" y="-170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CtRb_3HX5sHRKx_EAmUn-45" value="*...*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="-162" width="40" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
