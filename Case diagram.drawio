@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-21T04:43:03.285Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="MLRpRiI-TdrjJYrepwA9" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-21T04:51:06.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="pOL8kxF8_XBCkc9OTf15" version="21.3.2" type="github">
   <diagram name="Page-1" id="ezfOgxXxeIql9VlVBqjC">
     <mxGraphModel dx="1088" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -181,7 +181,7 @@
             <mxPoint x="110" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ka1cJN6JEQj0FcsD8roB-84" value="contract drugs" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Ka1cJN6JEQj0FcsD8roB-84" value="Supply drugs" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="850" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Ka1cJN6JEQj0FcsD8roB-85" value="Pharmacy" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
