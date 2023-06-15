@@ -14,14 +14,17 @@ echo "Connected Successfully<br/>";
 
 $sql = "CREATE TABLE Patient(
     SSN INT AUTO_INCREMENT,
-    PName VARCHAR(20) NOT NULL,
+ First_name VARCHAR(20) NOT NULL,
+ Last_name VARCHAR(30) NOT NULL,
+ Email_Address VARCHAR(30),
+ Gender Varchar(4),
    Age INT NOT NULL,
-   Address VARCHAR(20),
+   City_Address VARCHAR(20),
    DSSN INT,
-   PhoneNo int,
+   PhoneNo Varchar(30),
 
     PRIMARY KEY (SSN),
-    Foreign key(DSSN)
+    Foreign key(DSSN) reference doctor table (DSSN)
 )";
 
 

@@ -11,18 +11,23 @@ if($conn->connect_error){
     echo"Connection successful";
 }
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $Doctors_Name=$_POST["DName"];
-    $Doctors_SSN=$_POST["DSSN"];
+    $FirstName=$_POST["FirstName"];
+    $LastName =$_POST["LastName"];
+    $Age =$_POST["age"];
+    $PhoneNo =$_POST["PhoneNO"];
+    $Email=$_POST["Email_Address"];
     $Specialty=$_POST["Specialty"];
     $Years_of_Experience=$_POST["YearsofExperience"];
-    $Email=$_POST["Email"];
+    $Doctor_Salary=$_POST["DoctorSalary"];
+    $Doctor_password=$_POST["DoctorPassword"];
+  
 
 }
-$sql=("INSERT INTO doctor(DSSN,DName,Specialty,YearsofExperience,Email)VALUES(?,?,?,?,?)");
+$sql=("INSERT INTO doctor(DSSN,DName,Specialty,YearsofExperience,Email,DoctorPassword)VALUES(?,?,?,?,?)");
 $stmt=$conn->prepare($sql);
 
 $stmt=$conn->prepare($sql);
-$stmt->bind_param("issis",$Doctors_SSN,$Doctors_Name,$Specialty,$Years_of_Experience,$Email);
+$stmt->bind_param("issis",$Doctors_SSN,$Doctors_Name,$Specialty,$Years_of_Experience,$Email,$Doctor_password);
 
 $stmt->execute();
 if($conn->affected_rows>0){

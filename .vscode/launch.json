@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/XAMPP/htdocs/Demo",
-      "program": "c:/XAMPP/htdocs/Demo/build/Debug/outDebug",
+      "cwd": "c:/XAMPP/htdocs/Project Folder/Demo/project_work",
+      "program": "c:/XAMPP/htdocs/Project Folder/Demo/project_work/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
