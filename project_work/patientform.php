@@ -11,19 +11,18 @@ if ($conn ->connect_error){
 }else{
 echo "Connected successfully";}
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
-    $first_name=$_POST["Pfname"];
-    $last_name=$_POST["Plname"];
+    $first_name=$_POST["pname"];
+    $last_name=$_POST["last name"];
     $SSN=$_POST["id"];
     $Gender=$_POST["gender"];
     $Address=$_POST["Address"];
     $Age=$_POST["Age"];
     $email=$_POST["email"];
 }
-$sql="INSERT INTO patient(Pfname,Plname,SSN,Age,Gender,LAddress,email)VALUES(?,?,?,?,?,?,?)";
-$stmt=$conn->prepare($sql);
+$sql="INSERT INTO patient(First_name,Last_name,SSN,Age,Gender,City_Address,email,DSSN)VALUES(?,?,?,?,?,?,?)";
 
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("ssiisss", $first_name, $last_name, $SSN, $Age, $Gender, $Address, $email);
+$stmt->bind_param("sssssss", $first_name, $last_name, $SSN, $Age, $Gender, $Address, $email);
 
 
 $stmt->execute();

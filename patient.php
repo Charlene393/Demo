@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "";
 $password = "";
-$database = "drug_dispensing_tool";
+$database = "DrugDispensingTool";
 
 // Create connection
 $conn = mysqli_connect($host, $username, $password, $database);
@@ -14,17 +14,14 @@ echo "Connected Successfully<br/>";
 
 $sql = "CREATE TABLE Patient(
     SSN INT AUTO_INCREMENT,
- First_name VARCHAR(20) NOT NULL,
- Last_name VARCHAR(30) NOT NULL,
- Email_Address VARCHAR(30),
- Gender Varchar(4),
+    PName VARCHAR(20) NOT NULL,
    Age INT NOT NULL,
-   City_Address VARCHAR(20),
+   Address VARCHAR(20),
    DSSN INT,
-   PhoneNo Varchar(30),
+   PhoneNo int,
 
     PRIMARY KEY (SSN),
-    Foreign key(DSSN) reference doctor table (DSSN)
+    Foreign key(DSSN)
 )";
 
 

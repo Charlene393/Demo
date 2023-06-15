@@ -34,6 +34,7 @@
     "**/.vscode/**"
   ],
   "C_Cpp_Runner.useAddressSanitizer": false,
+<<<<<<< HEAD
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.msvcWarnings": [
     "/W4",
@@ -53,4 +54,7 @@
   ],
   "C_Cpp_Runner.useUndefinedSanitizer": false,
   "C_Cpp_Runner.useLeakSanitizer": false
+=======
+  "C_Cpp_Runner.showCompilationTime": false
+>>>>>>> c4a5d29aba724ed5ef5e6f9d9f0388bbe43df06b
 }
