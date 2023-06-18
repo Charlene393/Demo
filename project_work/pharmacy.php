@@ -7,7 +7,8 @@ $conn = new mysqli($servername, $username, $password, $database);
 $sql = "CREATE TABLE pharmacy (
  PharPhoneNo int PRIMARY KEY,
  LoAddress  varchar(255),
- PharName varchar(255)
+ PharName varchar(255),
+ pharmacy_email varchar(40)
 )";
 if ($conn->connect_error) {
     echo "Connection failed: " . $conn->connect_error . "\n";

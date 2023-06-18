@@ -17,12 +17,14 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $Gender=$_POST["gender"];
     $Address=$_POST["Address"];
     $Age=$_POST["Age"];
+    $InsuranceNo=$_POST["InsuranceNo"]
+    $InsuranceCo=$_POST["InsuranceCo"]
     $email=$_POST["email"];
 }
-$sql="INSERT INTO patient(First_name,Last_name,SSN,Age,Gender,City_Address,email,DSSN)VALUES(?,?,?,?,?,?,?)";
+$sql="INSERT INTO patient(First_name,Last_name,SSN,Age,Gender,City_Address,email,DSSN,InsuranceNo,InsuranceCo)VALUES(?,?,?,?,?,?,?,?,?)";
 
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sssssss", $first_name, $last_name, $SSN, $Age, $Gender, $Address, $email);
+$stmt->bind_param("sssssss", $first_name, $last_name, $SSN, $Age, $Gender, $Address, $email, $InsuranceNo,$InsuranceCo);
 
 
 $stmt->execute();
