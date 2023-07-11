@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient</title>
+</head>
+<body>
+    <h1>Patient Prescription</h1>
+    <div class="container">
+        <form method="post" action="">
+            <label for="SSN">SSN</label>
+            <input type="text" id="SSN" name="SSN" value="<?php echo $ssn; ?>" readonly><br><br>
+            <label for="Patient Name">Patient Name</label>
+            <input type="text" id="PatientName" value="<?php echo $first_name . ' ' . $last_name; ?>" readonly><br><br>
+            <label for="Patient Diagnosis">Patient Diagnosis</label>
+            <input type="text" id="PatientDiagnosis" value="<?php echo $diagnosis_id; ?>" readonly><br><br>
+            <label for="Patient Prescription">Patient Prescription</label>
+            <input type="text" id="PatientPrescription" value="<?php echo $prescription; ?>" readonly><br><br>
+        </form>
+    </div>
+</body>
+</html>
