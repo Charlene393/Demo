@@ -1,0 +1,51 @@
+<?php
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "drug_dispensing_tool";
+
+// Create a database connection
+$connection = mysqli_connect($host, $username, $password, $database);
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Get the form data
+    $Pharmacist_SSN = $_POST["PharSSN"];
+    $Pharmacists_first_name = $_POST["Pharfname"];
+    $Pharmacists_last_name = $_POST["Pharlname"];
+    $Pharmacys_Name = $_POST["PharName"];
+    $Pharmacys_Phone_Number = $_POST["PharPhoneNo"];
+    $password = $_POST["Create_Password"];
+    $confirmPassword = $_POST["Confirm_Password"];
+}
+       // Validate password match
+       if ($Create_Password !== $Confirm_Password) {
+        echo "Passwords do not match";
+        exit;
+    }
+
+    // Hash the password for storage
+    $hashedPassword = password_hash($Create_Password, PASSWORD_DEFAULT);
+
+    // Store the pharmacist data in the database
+    $stmt = $conn->prepare("INSERT INTO pharmacist (PharSSN,Pharfname,Pharlname,PharPhoneNo,PharName, password) VALUES (?,?,?,?,?,?)");
+    $stmt->bind_param("sssiss",$Pharmacist_SSN,$Pharmacists_first_name,$Pharmacists_last_name,$Pharmacys_Phone_Number, $Pharmacys_Name,$hashedPassword);
+
+    if ($stmt->execute()) {
+        echo "Registration successful.";
+        header("Location: /project_work/loogginngginn/sign_in.html");
+        exit;
+    } else {
+        echo "Error during registration: " . $stmt->error;
+    }
+    
+    // Close the prepared statement
+    $stmt->close();
+
+
+// Close the database connection
+$conn->close();
+
+?>
