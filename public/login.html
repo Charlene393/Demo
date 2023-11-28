@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <link rel="stylesheet" href="css/signIn.css"> 
+</head>
+<body>
+    <div class="Container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-button">Log-In</button>
+            </div>
+           
+            <form class="input-group" action="login.php" method="POST">
+              
+              <select name="user_type" class="input-field" required>
+                <option value="Patient">Patient</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Pharmacist">Pharmacist</option>
+                <option value="Administrator">Administrator</option>
+            </select>
+            <br>
+                <input type="text" name="uname" class="input-field" placeholder="Enter your username" required><br>
+                <input type="password" name="pass" class="input-field" placeholder="Enter your password" required><br><br>
+                <input type="checkbox" class="check-box"><span>Do not Remember Password</span><br>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+       
+            <span class="signup-text">Don't have an account? <a href="js/register.html">Sign Up Now</a></span>
+        </div>
+        <div id="adminSection" style="display: none;">
+            <p>Welcome, <span id="AdminName"></span></p>
+            <button type="button" onclick="logoutAdmin()">Logout</button>
+        </div>
+    </div>
+    <script>
+        
+        var userType = "<?php echo isset($_POST['user_type']) ? $_POST['user_type'] : ''; ?>";
+        if (userType === "Administrator") {
+            showAdminSection();
+        }
+
+        function showAdminSection() {
+            document.getElementById('adminSection').style.display = 'block';
+            var adminName = "<?php echo isset($_POST['uname']) ? $_POST['uname'] : ''; ?>";
+            document.getElementById('adminName').textContent = adminName;
+        }
+
+        
+        function logoutAdmin() {
+            document.getElementById('adminSection').style.display = 'none';
+            document.querySelector('form').reset(); // Clear form inputs
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+DATABASE_HOST = localhost
+DATABASE_USER = root
+DATABASE_PASSWORD =
+DATABASE =drug_dispensing_tool
+JWT_SECRET = BDSNK438EJ(WP[Q])9'wqa[]P02fbdsklakzdbvnsa()((((()((()))))))fueds8ens09
+JWT_EXPIRES= 90d
+COOKIE_EXPIRES=90
